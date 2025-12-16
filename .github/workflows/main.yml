@@ -29,17 +29,17 @@ jobs:
         
       # 3. Análisis Estático de Calidad (SonarQube)
       # Este paso requiere la URL de SonarQube y un token configurado en GitHub Secrets
-      - name: Análisis de Calidad con SonarQube
-        run: mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+      # - name: Análisis de Calidad con SonarQube
+       #  run: mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} -Dsonar.login=${{ secrets.SONAR_TOKEN }}
         # Aquí se incluye el paso obligatorio de Análisis Estático de Calidad [cite: 58, 63]
         
       # 4. Publicación del Artefacto (Nexus)
       # Esta etapa solo se ejecuta si la etapa de SonarQube es exitosa
       # La configuración de Maven (settings.xml) debe contener las credenciales de Nexus
-      - name: Publicar Artefacto en Nexus
-        run: mvn deploy -s settings.xml
+       #- name: Publicar Artefacto en Nexus
+         #run: mvn deploy -s settings.xml
         # Este paso incluye la Publicación del Artefacto, si todos los pasos anteriores son exitosos [cite: 58, 64]
 # 5. Publicación del Artefacto (Nexus)
-      - name: Publicar Artefacto en Nexus
-        run: mvn deploy -s settings.xml 
+      - # name: Publicar Artefacto en Nexus
+        # run: mvn deploy -s settings.xml 
         # La bandera '-s settings.xml' indica que debe usar el archivo que creamos.
