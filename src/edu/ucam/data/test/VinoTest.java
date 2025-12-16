@@ -87,28 +87,28 @@ public class VinoTest {
 
     // ====== TESTS DISEÑADOS PARA FALLAR (FALLO) ======
 
-    @Test
-    public void testEqualsFalla() {
-        // Espera 999 pero realmente el id es 1
-        assertEquals(999, vino1.getId());               // fallo
-    }
-
-    @Test
-    public void testNullFalla() {
-        // nombre NO es nulo, así que esto fallará
-        assertNull(vino1.getNombre());                  // fallo
-    }
-
-    @Test
-    public void testSameFalla() {
-        // vino1 y vino2 son objetos distintos
-        assertSame(vino1, vino2);                       // fallo
-    }
-
-    @Test
-    public void testArrayEqualsFalla() {
-        int[] esperados = {1, 2};
-        int[] reales    = {1, 2, 3};
-        assertArrayEquals(esperados, reales);           // fallo
-    }
+//    @Test
+//    public void testEqualsFalla() {
+//        // Espera 999 pero realmente el id es 1
+//        assertEquals(999, vino1.getId());               // fallo
+//    }
+//
+//    @Test
+//    public void testNullFalla() {
+//        // nombre NO es nulo, así que esto fallará
+//        assertNull(vino1.getNombre());                  // fallo
+//    }
+//
+//    @Test
+//    public void testSameFalla() {
+//        // vino1 y vino2 son objetos distintos
+//        assertSame(vino1, vino2);                       // fallo
+//    }
+//
+//    @Test
+//    public void testArrayEqualsFalla() {
+//        int[] esperados = {1, 2};
+//        int[] reales    = {1, 2, 3};
+//        assertArrayEquals(esperados, reales);           // fallo
+//    }
 }

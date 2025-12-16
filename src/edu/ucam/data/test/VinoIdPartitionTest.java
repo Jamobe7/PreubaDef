@@ -20,10 +20,10 @@ public class VinoIdPartitionTest {
         assertTrue(vino.getId() > 0);
     }
 
-    @Test
-    public void testIdCeroEsperadoFallo() {
-        vino.setId(0);
-        // Imaginamos que NO debería ser 0, forzamos un fallo adrede
-        assertTrue("El id no debería ser 0", vino.getId() > 0);
-    }
+//    @Test
+//    public void testIdCeroEsperadoFallo() {
+//        vino.setId(0);
+//        // Imaginamos que NO debería ser 0, forzamos un fallo adrede
+//        assertTrue("El id no debería ser 0", vino.getId() > 0);
+//    }
 }

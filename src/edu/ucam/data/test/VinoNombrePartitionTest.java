@@ -19,9 +19,9 @@ public class VinoNombrePartitionTest {
         assertFalse(vino.getNombre().isEmpty());
     }
 
-    @Test
-    public void testNombreNullEsperadoFallo() {
-        // Provocamos un fallo: esperamos que sea null y no lo es
-        assertNull(vino.getNombre());
-    }
+//    @Test
+//    public void testNombreNullEsperadoFallo() {
+//        // Provocamos un fallo: esperamos que sea null y no lo es
+//        assertNull(vino.getNombre());
+//    }
 }
