@@ -40,6 +40,6 @@ jobs:
          #run: mvn deploy -s settings.xml
         # Este paso incluye la Publicación del Artefacto, si todos los pasos anteriores son exitosos [cite: 58, 64]
 # 5. Publicación del Artefacto (Nexus)
-      - # name: Publicar Artefacto en Nexus
+      # - name: Publicar Artefacto en Nexus
         # run: mvn deploy -s settings.xml 
         # La bandera '-s settings.xml' indica que debe usar el archivo que creamos.
