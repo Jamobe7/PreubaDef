@@ -18,7 +18,7 @@ public class TestRunner {
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
         }
-
+//
         System.out.println("¿Todo correcto? " + result.wasSuccessful());
         System.out.println("Total tests: " + result.getRunCount());
         System.out.println("Fallos: " + result.getFailureCount());
